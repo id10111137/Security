@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menuone">
+        <item
+            android:id="@+id/IdMenuA"
+            android:enabled="true"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/IdMenuB"
+            android:enabled="true"
+            android:icon="@drawable/ic_info"
+            android:title="My Info" />
+        <item
+            android:id="@+id/IdMenuC"
+            android:enabled="true"
+            android:icon="@drawable/ic_profil"
+            android:title="My Profil" />
+
+    </group>
+</menu>

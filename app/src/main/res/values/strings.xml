@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Security</string>
+    <!-- Login -->
+    <string name="mUsername">Username</string>
+    <string name="mPassword">Password</string>
+    <string name="mSub">time will run automatically</string>
+    <string name="mLogin">Login</string>
+    <string name="mStartPatroli">Working</string>
+    <string name="mTRegister">Dont Have Account ?</string>
+    <string name="mTNewAdd">New Issue ?</string>
+    <string name="mGoRegister">Go Register</string>
+    <string name="mLupaPassword">Reset Password</string>
+
+    <!--Register-->
+    <string name="mEmail">Email</string>
+    <string name="mRegister">Register</string>
+    <string name="mTLogin">Already Account, ?</string>
+    <string name="mGoLogin">Go Login</string>
+    <string name="sign_up_togel">Sign Up Securty</string>
+    <string name="or_sign_with">Or Sign With</string>
+    <string name="txt_wellcome">Wellcome,</string>
+    <string name="txt_security">In Apps Sequrity</string>
+    <string name="mFullName">Full Name</string>
+    <string name="mSimpan">Save</string>
+    <string name="mIssue">Issue</string>
+
+
+</resources>
