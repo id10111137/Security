@@ -1,10 +1,13 @@
 package com.example.security.Home.Fragment;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -16,8 +19,11 @@ import com.example.security.Home.Activity.ActivityTrafic;
 import com.example.security.R;
 import com.example.security.SignUp.ActivityLogin;
 
+import java.util.Objects;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import info.androidhive.fontawesome.FontTextView;
 
 public class FragmentHome  extends Fragment {
 
@@ -41,8 +47,9 @@ public class FragmentHome  extends Fragment {
 
     @OnClick(R.id.IdIssue)
     void GoIssue(){
-        mIntent = new Intent(getContext(), ActivityIssue.class);
-        startActivity(mIntent);
+//        mIntent = new Intent(getContext(), ActivityIssue.class);
+//        startActivity(mIntent);
+        DialogShow();
     }
 
     @OnClick(R.id.IdShcedule)
@@ -75,4 +82,28 @@ public class FragmentHome  extends Fragment {
         mIntent = new Intent(getContext(), ActivityLogin.class);
         startActivity(mIntent);
     }
+
+    private void DialogShow(){
+        final Dialog dialog = new Dialog(Objects.requireNonNull(getContext()));
+        // kemudian menambahkan tampilan costum dialog;
+        dialog.setContentView(R.layout.dialog_issue);
+        dialog.setTitle("Costum Dialog");
+        FontTextView IdDialogClose = (FontTextView) dialog.findViewById(R.id.IdDialogClose);
+        IdDialogClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        LinearLayout IdSimpanIssue = (LinearLayout) dialog.findViewById(R.id.IdSimpanIssue);
+        IdSimpanIssue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "InProgress", Toast.LENGTH_SHORT).show();
+            }
+        });
+        dialog.show();
+    }
+
 }

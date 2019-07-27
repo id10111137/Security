@@ -1,9 +1,11 @@
 package com.example.security.Home.Activity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,6 +16,7 @@ import com.example.security.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import info.androidhive.fontawesome.FontTextView;
 
 public class ActivityIssue extends AppCompatActivity {
 
@@ -52,6 +55,7 @@ public class ActivityIssue extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Yes, I am Bell Icon", Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
     @Override
